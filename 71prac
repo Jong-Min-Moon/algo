@@ -1,0 +1,23 @@
+def search_list_all(a, x):
+    result = []
+    for i in range(len(a)):
+        if a[i] == x:
+            result.append(i)
+    return result
+
+v = [178, 92, 18, 33, 58, 7, 33, 42]
+print(search_list_all(v,33))
+
+
+
+stu_no = [39,14,67,105]
+stu_name = ['Justin', 'John', 'Mike', 'Summer']
+def id2name(stu_no, stu_name, id):
+    n = len(stu_no)
+    for i in range(n):
+        if stu_no[i] == id:
+            return stu_name[i]
+    return '?'
+
+print(id2name(stu_no, stu_name, 14))
+print(id2name(stu_no, stu_name, 99))
